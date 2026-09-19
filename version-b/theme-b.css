@@ -1,0 +1,249 @@
+/* Concept B — Warm Premium / Editorial variation
+   Built on the exact same structure and interaction model as Concept A. */
+:root{
+  --teal:#079cad;
+  --teal-dark:#123f4a;
+  --teal-soft:#eef8f7;
+  --orange:#ef8953;
+  --orange-dark:#dc7444;
+  --sand:#f7efe7;
+  --ink:#102d42;
+  --muted:#68757a;
+  --line:#eadfd5;
+  --shadow:0 18px 48px rgba(35,44,46,.09);
+}
+body{background:#f3eee8;color:var(--ink)}
+main{background:#fffdfb;box-shadow:0 0 0 1px rgba(234,223,213,.4)}
+.site-header{background:rgba(255,253,250,.96);border-color:#eadfd5}
+.nav-shell{height:98px}
+.primary-nav{font-weight:600;letter-spacing:.01em}
+.button{border-radius:999px}
+.button-primary{background:linear-gradient(135deg,#f17266,#ef8953);box-shadow:0 8px 20px rgba(239,137,83,.22)}
+.button-primary:hover{background:linear-gradient(135deg,#e8675c,#df7c49)}
+.button-secondary{background:var(--teal-dark)}
+.button-whatsapp{background:#078c93}
+.button-outline{border-color:#9fbfbc;background:#fffdfa}
+.hero{min-height:690px;background:#fffaf5}
+.hero:before{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(239,137,83,.16);border-radius:50%;left:-250px;top:36px;box-shadow:0 0 0 54px rgba(7,156,173,.045),0 0 0 108px rgba(239,137,83,.035);z-index:1}
+.hero-visual{left:43%;filter:saturate(.9) contrast(.98) sepia(.04)}
+.hero-visual::after{background:linear-gradient(90deg,#fffaf5 0%,rgba(255,250,245,.98) 24%,rgba(255,250,245,.32) 57%,rgba(255,250,245,.02) 78%)}
+.hero-inner{padding-top:122px;padding-bottom:150px}
+.hero-copy{max-width:590px}
+.hero h1{font-size:66px;line-height:1.01;font-weight:500;letter-spacing:-.045em}
+.hero h1 span{color:#087f91;font-style:italic;font-weight:500}
+.hero-rule{width:70px;background:linear-gradient(90deg,#f17266,#f3b96c)}
+.hero-description{font-size:18px;line-height:1.75;color:#45545b;max-width:500px}
+.eyebrow{color:#d76f48;letter-spacing:.16em}
+.value-strip{border-color:#eadfd5;border-radius:22px;box-shadow:0 18px 48px rgba(45,52,53,.08);background:rgba(255,255,255,.94)}
+.value-item h2{font-family:var(--serif);font-weight:500;font-size:17px}
+.conditions-section{padding-top:96px;background:linear-gradient(180deg,#fffdfb,#faf4ee)}
+.section-intro h2,.section-title{font-size:41px;font-weight:500}
+.section-intro>p:last-child{font-size:16px}
+.condition-layout{gap:32px}
+.condition-grid{border:0;gap:12px;background:transparent;overflow:visible}
+.condition-card{background:#fff;border:1px solid #eee2d8!important;border-radius:18px;min-height:150px;box-shadow:0 8px 24px rgba(42,47,48,.035)}
+.condition-card:hover{background:#fffaf5;border-color:#e5c8b8!important;box-shadow:0 16px 32px rgba(42,47,48,.08)}
+.condition-card svg{stroke:#0a8895}
+.unsure-card{border:0;background:linear-gradient(150deg,#173e48,#0d6570);color:#fff;box-shadow:0 20px 48px rgba(18,63,74,.18)}
+.unsure-card h3{font-size:27px;font-weight:500}
+.unsure-card p{color:#dfeeee}
+.placeholder-art{background:rgba(255,255,255,.1)}
+.placeholder-art svg{stroke:#f4c3a9}
+.body-area-section,.education-section,.aftercare-preview{background:#fffdfb}
+.relationship-section,.faq-section,.video-story-section{background:#f7efe7}
+.body-area-card,.relationship-card,.resource-mini,.faq-item,.aftercare-panel,.location-card{border-color:#eadfd5}
+.body-area-card,.relationship-card,.resource-mini{border-radius:18px}
+.how-section{background:#fff;padding-top:94px;padding-bottom:94px}
+.step-number{background:#fff7f0;border-color:#f0c8b5;color:#dc7444}
+.authority-section{background:#f8f1ea;padding-top:96px;padding-bottom:96px}
+.authority-card{border:0;background:#fffdfb;box-shadow:0 22px 55px rgba(38,47,49,.09);grid-template-columns:410px 1fr}
+.authority-photo{background:linear-gradient(145deg,#eaf5f4,#f6e6da);min-height:440px}
+.portrait-placeholder{border-color:#d79c7b;color:#8a5944;background:rgba(255,255,255,.55)}
+.authority-copy{padding:62px}
+.authority-copy h2{font-size:44px;font-weight:500}
+.authority-point{border:0;background:#f9f2ec}
+.testimonials-section{background:#fffdfb;padding-top:92px;padding-bottom:92px}
+.rating-card,.review-card{border:0;box-shadow:0 10px 30px rgba(42,47,48,.06);border-radius:22px}
+.review-card blockquote{font-size:22px;font-style:italic}
+.why-section{background:#f8f1ea}
+.why-visual{background:linear-gradient(145deg,#153e49,#087f91)}
+.why-quote strong{font-weight:500;font-style:italic}
+.video-story-section{background:#fffdfb}
+.appointment-section{background:linear-gradient(118deg,#163f49,#087f91 68%,#0c93a0);border-radius:28px;box-shadow:0 20px 45px rgba(18,63,74,.16)}
+.location-section{background:#faf4ee}
+.site-footer-dark{background:#102d42}
+.site-footer-dark img{filter:brightness(0) invert(1)}
+.mega-menu{border-color:#eadfd5;background:#fffdfb}
+.mega-feature{background:linear-gradient(145deg,#163f49,#087f91)}
+.mobile-cta{background:#102d42}
+.floating-whatsapp{background:#087f91}
+@media(max-width:900px){.hero h1{font-size:50px}.authority-card{grid-template-columns:300px 1fr}.authority-copy{padding:38px}}
+@media(max-width:640px){.nav-shell{height:76px}.hero{min-height:700px}.hero:before{width:360px;height:360px;left:-240px}.hero-inner{padding-top:48px}.hero h1{font-size:43px}.hero-description{font-size:15px}.condition-grid{gap:8px}.condition-card{min-height:135px}.authority-card{grid-template-columns:1fr}.authority-copy{padding:30px}.authority-copy h2{font-size:34px}}
+
+/* Contrast refinement pass — Concept B
+   Goal: preserve the warm editorial direction while increasing separation,
+   legibility and visual confidence. Values are chosen to meet or exceed
+   WCAG AA for normal text in the combinations used below. */
+:root{
+  --navy:#021e3a;
+  --teal:#079cad;
+  --teal-dark:#006f7f;
+  --teal-soft:#e7f6f7;
+  --orange:#f38a52;
+  --orange-dark:#c95c2c;
+  --coral:#f17266;
+  --sand:#f5ece2;
+  --ink:#021e3a;
+  --muted:#4c5b61;
+  --line:#dccdc1;
+}
+
+body{background:#ebe4dc;color:var(--ink)}
+main{background:#fffdfb;box-shadow:0 0 0 1px rgba(2,30,58,.12)}
+.site-header{background:rgba(255,253,251,.985);border-color:#d8cbc0;box-shadow:0 1px 0 rgba(2,30,58,.06)}
+.primary-nav,.nav-link{color:var(--navy)}
+.nav-link:hover,.nav-link.active{color:#006f7f}
+.caret{color:#006f7f}
+
+/* High-contrast actions */
+.button-primary{
+  background:linear-gradient(135deg,var(--coral),var(--orange));
+  color:var(--navy);
+  border-color:rgba(2,30,58,.18);
+  box-shadow:0 8px 22px rgba(201,92,44,.22)
+}
+.button-primary:hover{
+  background:linear-gradient(135deg,#ee665d,#e9783e);
+  color:var(--navy);
+  box-shadow:0 10px 26px rgba(201,92,44,.28)
+}
+.button-secondary,.button-whatsapp{background:var(--teal-dark);color:#fff}
+.button-secondary:hover,.button-whatsapp:hover{background:#075f6a;color:#fff}
+.button-outline{border:2px solid var(--teal-dark);color:var(--navy);background:#fffdfb}
+.button-outline:hover{background:var(--teal-soft);color:var(--navy)}
+.button:focus-visible,.nav-link:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid #f3b96c;outline-offset:3px}
+
+/* Typography contrast */
+.eyebrow{color:#a9421f}
+.hero-description,.section-intro>p:last-child,.why-copy>p:not(.eyebrow),.video-story-copy>p:not(.eyebrow),.location-copy>p:not(.eyebrow),.resource-page-card p,.aftercare-card p{color:var(--muted)}
+.hero h1,.section-intro h2,.section-title,.authority-copy h2,.why-copy h2,.video-story-copy h2,.location-copy h2{color:var(--navy)}
+.hero h1 span{color:#006f7f}
+
+/* Increase separation between major surfaces */
+.hero{background:#fffaf5;border-bottom:1px solid #dfd3c8}
+.conditions-section{background:linear-gradient(180deg,#fffdfb 0%,#f3e9df 100%)}
+.relationship-section,.faq-section{background:#f1e4d8}
+.authority-section,.why-section{background:#eaded2}
+.location-section{background:#f0e4d8}
+.body-area-section,.education-section,.video-story-section,.aftercare-preview,.testimonials-section{background:#fffdfb}
+
+/* Cards: darker borders and clearer headings */
+.condition-card,.body-area-card,.relationship-card,.resource-mini,.faq-item,.aftercare-panel,.location-card,.resource-page-card,.aftercare-card{
+  border-color:#d6c8bd!important;
+}
+.condition-card,.body-area-card,.relationship-card,.resource-mini,.resource-page-card,.aftercare-card{background:#fff}
+.condition-card h3,.body-area-card h3,.relationship-card h3,.resource-mini h3,.resource-page-card h3,.aftercare-card h3{color:var(--navy)}
+.condition-card p,.body-area-card p,.relationship-card p,.resource-mini p,.faq-answer,.aftercare-card li{color:var(--muted)}
+.condition-card:hover,.body-area-card:hover,.relationship-card:hover,.resource-mini:hover{border-color:#aabcc0!important;box-shadow:0 14px 34px rgba(2,30,58,.12)}
+
+/* Dark feature panels */
+.unsure-card,.mega-feature,.why-visual,.appointment-section{background:linear-gradient(145deg,#021e3a 0%,#075f6a 100%);color:#fff}
+.unsure-card p,.mega-feature p,.appointment-section p,.why-visual p{color:#e7f3f4}
+.unsure-card h3,.mega-feature h3,.appointment-section h2,.why-visual strong{color:#fff}
+.placeholder-art{background:rgba(255,255,255,.12)}
+.placeholder-art svg{stroke:#f3b96c}
+
+/* Value strip and info cards */
+.value-strip{border-color:#d4c6ba;background:#fff;box-shadow:0 16px 42px rgba(2,30,58,.11)}
+.value-item h2{color:var(--navy)}
+.value-item p{color:#4c5b61}
+.step-number{background:#fff1e8;border-color:#cb8a68;color:#8d3518}
+.authority-card{background:#fff;box-shadow:0 22px 55px rgba(2,30,58,.12)}
+.authority-point{background:#f2e7dc;color:var(--navy)}
+.rating-card,.review-card{background:#fff;box-shadow:0 12px 34px rgba(2,30,58,.09)}
+.review-card blockquote{color:var(--navy)}
+
+/* Links need stronger dark teal on light surfaces */
+.review-link,.mega-link:hover,.location-details span,.footer-links a:hover{color:#006f7f}
+.mega-link{color:var(--navy)}
+.mega-menu{border-color:#d2c5b9;background:#fffdfb;box-shadow:0 18px 46px rgba(2,30,58,.16)}
+
+/* Footer and floating action: high contrast */
+.site-footer-dark{background:#021e3a;color:#fff}
+.footer-brand p{color:#dcebea}
+.footer-links a,.footer-links span{color:#dcebea}
+.footer-links strong{color:#fff}
+.footer-bottom{color:#b7ccca;border-color:rgba(255,255,255,.22)}
+.floating-whatsapp{background:#006f7f;color:#fff;box-shadow:0 12px 32px rgba(2,30,58,.34)}
+.floating-whatsapp span{background:#fff;color:#006f7f}
+.mobile-cta{background:#021e3a}
+
+/* Forms and FAQ controls */
+input,textarea,select{color:var(--navy);background:#fff;border-color:#b9c4c6}
+input::placeholder,textarea::placeholder{color:#68767c;opacity:1}
+input:focus,textarea:focus,select:focus{border-color:#006f7f;box-shadow:0 0 0 3px rgba(0,111,127,.15);outline:0}
+.faq-question{color:var(--navy)}
+
+/* Preserve premium warmth but avoid low-contrast orange text on cream. */
+.location-details strong,.video-label span{color:#a9421f}
+.why-quote span{color:#ffd6b8}
+
+@media(max-width:640px){
+  .button-primary{color:var(--navy)}
+  .site-header{background:#fffdfb}
+}
+
+
+/* ---- Requested revision: stronger navy base + fix How It Works legibility ---- */
+:root{
+  --navy-base:#021e3a;
+  --navy-2:#082540;
+  --navy-3:#0d314b;
+  --light-on-dark:#e6eef4;
+}
+body{background:var(--navy-base);}
+main{background:var(--navy-base);box-shadow:none;}
+.site-header{background:rgba(2,30,58,.98)!important;border-color:rgba(255,255,255,.12)!important;box-shadow:0 1px 0 rgba(255,255,255,.05)!important;}
+.site-header .brand img{filter:brightness(0) invert(1);}
+.site-header .primary-nav,.site-header .nav-link{color:#fff!important;}
+.site-header .nav-link:hover,.site-header .nav-link.active,.site-header .caret{color:#f3b96c!important;}
+.site-header .menu-toggle span{background:#fff;}
+.site-header .button-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.45);}
+.site-header .button-outline:hover{background:rgba(255,255,255,.08);color:#fff;}
+.hero{background:linear-gradient(120deg,var(--navy-base) 0%,var(--navy-2) 100%)!important;border-bottom:1px solid rgba(255,255,255,.09);}
+.hero-visual::after{background:linear-gradient(90deg,rgba(2,30,58,.98) 0%,rgba(2,30,58,.96) 22%,rgba(2,30,58,.42) 58%,rgba(2,30,58,.08) 82%)!important;}
+.hero h1,.hero h1 span,.hero-description,.section-intro h2,.section-title,.why-copy h2,.video-story-copy h2,.location-copy h2,.authority-copy h2{color:#fff;}
+.hero-description,.section-intro>p:last-child,.why-copy>p:not(.eyebrow),.video-story-copy>p:not(.eyebrow),.location-copy>p:not(.eyebrow),.authority-copy p{color:var(--light-on-dark);}
+.hero-rule{background:linear-gradient(90deg,#f3b96c,#ef8953);}
+.conditions-section,.relationship-section,.body-area-section,.education-section,.faq-section,.aftercare-preview,.authority-section,.testimonials-section,.why-section,.video-story-section,.location-section{background:var(--navy-base)!important;}
+.how-section{background:var(--navy-2)!important;color:#fff!important;padding-top:94px;padding-bottom:94px;}
+.how-section .section-intro h2,.how-section .section-intro p,.how-section .section-intro>p:last-child{color:#fff!important;}
+.how-section .steps .step{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);}
+.how-section .step h3{color:#fff;}
+.how-section .step p{color:#dde8ef;}
+.how-section .step-number{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);color:#f3b96c;display:inline-grid;place-items:center;width:58px;height:58px;border-radius:50%;}
+.section-intro h2,.section-title,.section-intro>p:last-child{color:#fff;}
+.value-strip,.condition-card,.body-area-card,.relationship-card,.resource-mini,.faq-item,.aftercare-panel,.location-card,.authority-card,.rating-card,.review-card,.resource-page-card,.aftercare-card{box-shadow:0 16px 40px rgba(0,0,0,.22);}
+.body-area-card,.relationship-card,.resource-mini,.faq-item,.aftercare-panel,.location-card,.authority-card,.rating-card,.review-card,.resource-page-card,.aftercare-card,.condition-card{background:#fffdfb;}
+.authority-section .section-intro h2,.authority-section .section-intro>p:last-child,.testimonials-section .section-intro h2,.testimonials-section .section-intro>p:last-child,.why-section .section-intro h2,.why-section .section-intro>p:last-child,.video-story-section .section-intro h2,.video-story-section .section-intro>p:last-child,.location-section .section-intro h2,.location-section .section-intro>p:last-child,.body-area-section .section-intro h2,.body-area-section .section-intro>p:last-child,.education-section .section-intro h2,.education-section .section-intro>p:last-child,.faq-section .section-intro h2,.faq-section .section-intro>p:last-child,.aftercare-preview .section-intro h2,.aftercare-preview .section-intro>p:last-child,.conditions-section .section-intro h2,.conditions-section .section-intro>p:last-child{color:#fff!important;}
+.review-card blockquote,.rating-card h3,.body-area-card h3,.relationship-card h3,.resource-mini h3,.faq-question,.location-card h3,.resource-page-card h3,.aftercare-card h3,.condition-card h3,.authority-copy h2{color:var(--navy)!important;}
+.rating-card p,.review-card p,.body-area-card p,.relationship-card p,.resource-mini p,.faq-answer,.location-card p,.resource-page-card p,.aftercare-card p,.authority-copy .credentials,.authority-copy p{color:#445862!important;}
+.why-shell,.video-story-shell,.location-card,.aftercare-panel,.body-area-grid,.education-grid,.review-grid{position:relative;z-index:1;}
+.site-footer-dark{background:var(--navy-base)!important;}
+
+
+/* subpage contrast + footer consistency fix */
+/* Cream/light content sections must use dark readable copy, even though the overall concept is navy based. */
+.content-section.section-tint{background:#f5ece2!important;color:var(--navy)!important;}
+.content-section.section-tint .section-intro h2,
+.content-section.section-tint .section-intro .section-title{color:var(--navy)!important;}
+.content-section.section-tint .section-intro>p:last-child{color:#4c5b61!important;}
+.content-section.section-tint .eyebrow{color:#a9421f!important;}
+.content-section.section-tint .related-card{background:#fff!important;border-color:#d6c8bd!important;}
+.content-section.section-tint .related-card h3{color:var(--navy)!important;}
+.content-section.section-tint .related-card p{color:#4c5b61!important;}
+.content-section.section-tint .related-card a{color:#006f7f!important;font-weight:800;}
+/* All Version B footers share the same navy treatment. */
+.site-footer-dark{background:#021e3a!important;color:#fff!important;}
+.site-footer-dark .footer-brand p,.site-footer-dark .footer-links a,.site-footer-dark .footer-links span{color:#dcebea!important;}
+.site-footer-dark .footer-links strong,.site-footer-dark .footer-bottom a{color:#fff!important;}

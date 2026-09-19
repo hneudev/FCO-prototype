@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Full Circle Orthopedics — Brand & Digital Experience Manual</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#009EB3;--teal-dark:#007A8A;--coral:#ED6F5F;--orange:#EE8C74;--yellow:#F4BB66;
+  --navy:#13243A;--navy-2:#1B324E;--white:#fff;--off:#F7F9FA;--mid:#5D6B7C;--border:#DDE3EA;
+  --success:#2E7D52;--danger:#B03020;--radius:10px;--shadow:0 16px 42px rgba(19,36,58,.09);--max:1080px;
+  --font:'Open Sans',Arial,sans-serif;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--off);color:var(--navy);font-family:var(--font);font-size:15px;line-height:1.65}
+a{color:inherit}img{max-width:100%;display:block}button,input,textarea{font:inherit}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;z-index:999;background:#fff;padding:10px 14px;border-radius:6px}
+nav{position:sticky;top:0;z-index:100;background:rgba(19,36,58,.98);backdrop-filter:blur(10px);min-height:62px;display:flex;align-items:center;padding:0 24px;box-shadow:0 1px 0 rgba(255,255,255,.08)}
+.nav-inner{width:min(100%,1280px);margin:auto;display:flex;align-items:center;gap:20px}.nav-logo{width:188px;flex:0 0 auto}.nav-logo img{width:100%}.nav-links{display:flex;gap:2px;margin-left:auto;list-style:none;padding:0}.nav-links a{display:block;color:rgba(255,255,255,.72);text-decoration:none;font-size:11px;font-weight:700;padding:9px 10px;border-radius:6px}.nav-links a:hover{color:#fff;background:rgba(255,255,255,.09)}
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden}.hero:before,.hero:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.08);border-radius:50%}.hero:before{width:560px;height:560px;right:-210px;top:-290px;box-shadow:0 0 0 58px rgba(0,158,179,.06),0 0 0 116px rgba(237,111,95,.035)}.hero:after{width:300px;height:300px;left:-180px;bottom:-210px}.hero-inner{max-width:var(--max);margin:auto;padding:82px 28px 74px;display:grid;grid-template-columns:1fr 340px;gap:54px;align-items:center;position:relative;z-index:1}.hero-label,.section-label{text-transform:uppercase;letter-spacing:.14em;font-size:10px;font-weight:800;color:var(--teal)}.hero h1{font-weight:300;font-size:clamp(36px,6vw,62px);line-height:1.05;margin:14px 0 18px;letter-spacing:-.035em}.hero h1 strong{font-weight:700;color:#fff}.hero p{color:rgba(255,255,255,.68);max-width:620px}.hero-mark{width:290px;height:290px;display:grid;place-items:center;border-radius:50%;background:rgba(255,255,255,.045)}.hero-mark img{width:82%;filter:brightness(0) invert(1);opacity:.88}
+main{padding-bottom:70px}.section{max-width:var(--max);margin:auto;padding:72px 28px 0}.section-head{display:grid;grid-template-columns:160px 1fr;gap:28px;margin-bottom:32px}.section-index{font-size:58px;line-height:1;color:#dfe7eb;font-weight:800}.section-title{font-size:clamp(25px,4vw,36px);font-weight:300;line-height:1.15;margin:3px 0 8px}.section-title strong{font-weight:700}.section-desc{margin:0;color:var(--mid);max-width:700px}.divider{height:1px;background:var(--border);max-width:var(--max);margin:66px auto 0}
+.card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);box-shadow:0 4px 14px rgba(19,36,58,.03)}.mission{background:var(--navy);color:#fff;padding:34px 38px;border-radius:14px;position:relative;overflow:hidden}.mission:after{content:"";position:absolute;width:230px;height:230px;border:1px solid rgba(255,255,255,.1);border-radius:50%;right:-110px;top:-115px}.mission .section-label{margin-bottom:10px}.mission p{font-size:18px;font-weight:300;margin:0;max-width:850px}.mission em{font-style:normal;font-weight:700;color:var(--yellow)}
+.tagline-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}.tagline{padding:23px;border-left:4px solid var(--teal)}.tagline small{display:block;text-transform:uppercase;letter-spacing:.12em;color:var(--mid);font-size:9px;font-weight:800}.tagline strong{display:block;font-size:17px;margin-top:6px}.values{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}.value{padding:22px;text-align:center}.dot{width:10px;height:10px;border-radius:50%;background:var(--teal);margin:0 auto 12px}.value h3{font-size:13px;margin:0 0 5px}.value p{font-size:12px;color:var(--mid);margin:0}
+.audience{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}.audience article{padding:22px}.audience h3{margin:0 0 10px;font-size:14px}.clean-list{list-style:none;padding:0;margin:0}.clean-list li{font-size:12px;color:var(--mid);padding:5px 0;border-bottom:1px solid var(--border)}.clean-list li:last-child{border-bottom:0}.clean-list li:before{content:"— ";color:var(--teal)}
+.palette{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.swatch{overflow:hidden}.swatch-color{height:102px}.swatch-info{padding:14px}.swatch-info strong,.swatch-info span{display:block}.swatch-info span{font-size:11px;color:var(--mid)}.swatch-info code{font-size:11px}.role{margin-top:5px;font-style:italic}
+.rule-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}.rule{padding:20px;border-left:4px solid var(--success);background:#EEF8F0}.rule.dont{border-color:var(--danger);background:#FEF2F0}.rule strong{font-size:11px;text-transform:uppercase;letter-spacing:.1em}.rule ul{padding-left:18px;margin:10px 0 0}.rule li{font-size:12px;margin:5px 0}
+.logo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.logo-card{overflow:hidden}.logo-preview{height:170px;display:flex;align-items:center;justify-content:center;padding:25px;background:#fff}.logo-preview.dark{background:var(--navy)}.logo-preview img{max-height:105px;object-fit:contain}.logo-copy{padding:13px 15px;border-top:1px solid var(--border)}.logo-copy strong,.logo-copy span{display:block}.logo-copy span{font-size:11px;color:var(--mid)}
+.motif{margin-top:28px;display:grid;grid-template-columns:300px 1fr;gap:30px;align-items:center}.motif-art{height:270px;background:var(--navy);border-radius:16px;display:grid;place-items:center;overflow:hidden}.motif-art img{width:220px;filter:brightness(0) invert(1);opacity:.22}.motif p{color:var(--mid)}
+.type-grid{display:grid;grid-template-columns:220px 1fr;border-top:1px solid var(--border)}.type-meta,.type-sample{padding:22px 0;border-bottom:1px solid var(--border)}.type-meta{padding-right:28px}.type-meta strong{display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}.type-meta code{font-size:11px;color:var(--mid)}.t-h1{font-size:38px;font-weight:300;line-height:1.12;margin:0}.t-h1 strong{font-weight:700}.t-h2{font-size:25px;font-weight:600;margin:0}.t-h3{font-size:18px;font-weight:600;margin:0}.t-body{max-width:620px;margin:0}.t-label{text-transform:uppercase;letter-spacing:.14em;color:var(--teal);font-size:10px;font-weight:700}.t-button{display:inline-block;background:var(--teal-dark);color:#fff;padding:11px 20px;border-radius:5px;font-weight:700;font-size:13px}
+.voice-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.voice{padding:22px}.voice h3{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);margin:0 0 10px}.voice>p{font-size:12px;color:var(--mid)}.example{font-size:12px;background:var(--off);padding:12px;margin-top:8px;border-radius:6px}.example.good{border-left:3px solid var(--teal)}.example.bad{color:#788493;background:#FEF2F0;text-decoration:line-through}
+.photo-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:20px}.photo-hero{overflow:hidden;min-height:380px;position:relative}.photo-hero img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.photo-note{position:absolute;left:20px;right:20px;bottom:20px;background:rgba(19,36,58,.9);color:#fff;padding:18px;border-radius:8px}.photo-note strong{display:block}.photo-note span{font-size:11px;color:rgba(255,255,255,.7)}.photo-principles{display:grid;gap:12px}.photo-principle{padding:18px}.photo-principle strong{font-size:12px}.photo-principle p{font-size:11px;color:var(--mid);margin:4px 0 0}
+.digital-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.digital-card{padding:24px}.digital-card h3{margin:0 0 8px;font-size:16px}.digital-card p{font-size:12px;color:var(--mid)}.digital-card .sample-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.btn{display:inline-flex;align-items:center;min-height:42px;padding:0 16px;border-radius:6px;text-decoration:none;font-size:12px;font-weight:800;border:1px solid transparent}.btn.teal{background:var(--teal-dark);color:#fff}.btn.orange{background:var(--orange);color:var(--navy)}.btn.outline{border-color:var(--navy);color:var(--navy);background:#fff}.contrast-table{width:100%;border-collapse:collapse;margin-top:20px}.contrast-table th,.contrast-table td{text-align:left;padding:11px 10px;border-bottom:1px solid var(--border);font-size:12px}.contrast-table th{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--mid)}.status-good{color:var(--success);font-weight:700}.status-avoid{color:var(--danger);font-weight:700}
+.apps{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.app{overflow:hidden}.app-preview{height:290px;background:#eef1f4;display:flex;align-items:center;justify-content:center;padding:18px}.app-preview img{width:100%;height:100%;object-fit:contain}.app-copy{padding:16px}.app-copy strong,.app-copy span{display:block}.app-copy span{font-size:11px;color:var(--mid)}.app-copy a{font-size:11px;color:var(--teal-dark);font-weight:700}
+.signature-builder{margin-top:28px;display:grid;grid-template-columns:340px 1fr;gap:20px}.sig-controls{padding:22px}.field{margin-bottom:12px}.field label{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.08em;font-weight:700;color:var(--mid);margin-bottom:5px}.field input{width:100%;border:1px solid var(--border);border-radius:6px;padding:10px;color:var(--navy);background:#fff}.field input:focus{outline:3px solid rgba(0,158,179,.18);border-color:var(--teal)}.sig-output{display:grid;gap:14px}.signature-preview{padding:24px;min-height:190px;display:flex;align-items:center}.code-wrap{position:relative}.code-wrap textarea{width:100%;min-height:285px;resize:vertical;border:1px solid var(--border);border-radius:8px;background:#0F1D2D;color:#E6F0F6;padding:16px;font:12px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace}.copy-button{position:absolute;right:10px;top:10px;background:var(--teal);color:#fff;border:0;border-radius:5px;padding:8px 12px;font-size:11px;font-weight:800;cursor:pointer}.copy-button.copied{background:var(--success)}.sig-help{font-size:11px;color:var(--mid);margin:0}
+.governance{background:var(--navy);color:#fff;padding:30px;border-radius:14px}.governance-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.governance article strong{display:block;color:var(--yellow);font-size:10px;text-transform:uppercase;letter-spacing:.1em}.governance article span{font-size:12px;color:rgba(255,255,255,.75)}
+.contact{background:var(--navy);color:#fff;margin-top:72px;padding:46px 28px}.contact-inner{max-width:var(--max);margin:auto}.contact h2{font-weight:300;margin:0 0 6px}.contact p{color:rgba(255,255,255,.65)}.contacts{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:25px}.contacts strong{display:block;color:var(--teal);font-size:9px;text-transform:uppercase;letter-spacing:.1em}.contacts span{font-size:12px;color:rgba(255,255,255,.8)}.version{text-align:center;color:var(--mid);font-size:10px;padding:20px}
+@media(max-width:850px){.nav-links{display:none}.hero-inner{grid-template-columns:1fr}.hero-mark{display:none}.values{grid-template-columns:1fr 1fr}.audience{grid-template-columns:1fr}.palette,.logo-grid{grid-template-columns:1fr 1fr}.motif{grid-template-columns:1fr}.photo-grid,.digital-grid,.signature-builder{grid-template-columns:1fr}.apps{grid-template-columns:1fr}.contacts{grid-template-columns:1fr 1fr}.section-head{grid-template-columns:80px 1fr}.section-index{font-size:40px}}
+@media(max-width:560px){nav{padding:0 16px}.nav-logo{width:160px}.hero-inner,.section{padding-left:18px;padding-right:18px}.values,.palette,.logo-grid,.tagline-grid,.voice-grid,.rule-grid,.governance-grid{grid-template-columns:1fr}.type-grid{grid-template-columns:1fr}.type-meta{padding-bottom:8px;border-bottom:0}.type-sample{padding-top:0}.contacts{grid-template-columns:1fr}.section-head{grid-template-columns:1fr;gap:4px}.section-index{font-size:30px}.app-preview{height:230px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="#top"><img src="assets/logo-horizontal-white-transparent.png" alt="Full Circle Orthopedics and Sports Medicine"></a>
+    <ul class="nav-links">
+      <li><a href="#foundation">Foundation</a></li><li><a href="#identity">Identity</a></li><li><a href="#typography">Typography</a></li><li><a href="#voice">Voice</a></li><li><a href="#photography">Photography</a></li><li><a href="#digital">Digital</a></li><li><a href="#applications">Applications</a></li><li><a href="#signatures">Signatures</a></li>
+    </ul>
+  </div>
+</nav>
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <div><div class="hero-label">Brand & Digital Experience Manual · Version 1.1 · September 2026</div><h1>Full Circle<br><strong>Orthopedics</strong><br>and Sports Medicine</h1><p>A living guide for how the brand looks, speaks, moves, and shows up across patient care, digital experiences, print, and communication.</p></div>
+    <div class="hero-mark"><img src="assets/logo-swirl-transparent.png" alt="Full Circle swirl mark"></div>
+  </div>
+</header>
+<main id="main">
+<section class="section" id="foundation">
+  <div class="section-head"><div class="section-index">01</div><div><div class="section-label">Brand Foundation</div><h2 class="section-title">The beliefs behind <strong>Full Circle.</strong></h2><p class="section-desc">Everything visual and verbal should reinforce compassionate, listening-first orthopedic care that helps people preserve movement and stay engaged in the life they love.</p></div></div>
+  <div class="mission"><div class="section-label">Why We Exist</div><p>We are here to help you <em>reclaim</em> your enjoyment of life with <em>kindness</em> while keeping your body <em>whole.</em> We returned full circle to a time when patient care was rooted in kindness, active listening, and collaboration.</p></div>
+  <div class="tagline-grid"><div class="tagline card"><small>Primary tagline</small><strong>Stay Active and Engaged in the Life You Love</strong></div><div class="tagline card"><small>Supporting line</small><strong>We help you stay active and engaged in the life you love, using your body's own healing properties.</strong></div></div>
+  <div class="values">
+    <article class="value card"><div class="dot"></div><h3>Compassionate</h3><p>We treat every patient as a person with a story, not a case number.</p></article>
+    <article class="value card"><div class="dot" style="background:var(--coral)"></div><h3>Proactive</h3><p>We bring patients current treatment options and education before they have to ask.</p></article>
+    <article class="value card"><div class="dot" style="background:var(--orange)"></div><h3>Collaborative</h3><p>We work with you, listening carefully before we act.</p></article>
+    <article class="value card"><div class="dot" style="background:var(--yellow)"></div><h3>Trustworthy</h3><p>25+ years of experience and straightforward care, every time.</p></article>
+  </div>
+  <div class="audience">
+    <article class="card"><h3>Athletes & Active Adults</h3><ul class="clean-list"><li>Recreational to competitive athletes</li><li>Want to avoid unnecessary surgery and downtime</li><li>Value performance, independence, and longevity</li><li>Research options before committing</li></ul></article>
+    <article class="card"><h3>Adults Protecting Long-Term Mobility</h3><ul class="clean-list"><li>Managing joint, tendon, or muscle problems</li><li>Want a clear diagnosis before choosing treatment</li><li>Prefer individualized, unhurried care</li><li>Value comfort and direct communication</li></ul></article>
+    <article class="card"><h3>Out-of-Area Patients</h3><ul class="clean-list"><li>Travel for specialized regenerative care</li><li>Need clear pre-visit education and logistics</li><li>May include cross-border and future location patients</li><li>Brand experience should remain location-independent</li></ul></article>
+  </div>
+</section>
+<div class="divider"></div>
+<section class="section" id="identity">
+  <div class="section-head"><div class="section-index">02</div><div><div class="section-label">Visual Identity</div><h2 class="section-title">Recognizable without being <strong>generic medical.</strong></h2><p class="section-desc">Navy provides authority and structure. Teal carries the primary interaction language. Coral, orange, and yellow add controlled warmth and movement.</p></div></div>
+  <div class="palette">
+    <div class="swatch card"><div class="swatch-color" style="background:#009EB3"></div><div class="swatch-info"><strong>Teal</strong><code>#009EB3 · RGB 0/158/179 · CMYK 100/12/0/30*</code><span class="role">Primary brand and interactive accent.</span></div></div>
+    <div class="swatch card"><div class="swatch-color" style="background:#13243A"></div><div class="swatch-info"><strong>Navy</strong><code>#13243A · RGB 19/36/58 · CMYK 67/38/0/77*</code><span class="role">Primary text, headers, dark backgrounds.</span></div></div>
+    <div class="swatch card"><div class="swatch-color" style="background:#ED6F5F"></div><div class="swatch-info"><strong>Coral</strong><code>#ED6F5F · RGB 237/111/95 · CMYK 0/53/60/7*</code><span class="role">Controlled accent and highlights.</span></div></div>
+    <div class="swatch card"><div class="swatch-color" style="background:#EE8C74"></div><div class="swatch-info"><strong>Orange</strong><code>#EE8C74 · RGB 238/140/116 · CMYK 0/41/51/7*</code><span class="role">Warm conversion accent.</span></div></div>
+    <div class="swatch card"><div class="swatch-color" style="background:#F4BB66"></div><div class="swatch-info"><strong>Yellow</strong><code>#F4BB66 · RGB 244/187/102 · CMYK 0/23/58/4*</code><span class="role">Tertiary accent; ratings and small moments.</span></div></div>
+    <div class="swatch card"><div class="swatch-color" style="background:#FFFFFF;border-bottom:1px solid #eee"></div><div class="swatch-info"><strong>White</strong><code>#FFFFFF</code><span class="role">Primary light surface and reverse logo use.</span></div></div>
+  </div>
+  <p style="font-size:10px;color:var(--mid);margin:10px 0 0">*CMYK values are process approximations derived from the digital HEX palette. Final print jobs should be proofed by the printer; Pantone equivalents are not defined by the supplied brand assets.</p>
+  <div class="rule-grid"><div class="rule"><strong>Do</strong><ul><li>Use exact HEX values for digital work.</li><li>Use Navy/White for high-contrast structural areas.</li><li>Use Teal for links, navigation states, and informational actions.</li><li>Use Orange/Coral selectively for high-value conversion moments.</li></ul></div><div class="rule dont"><strong>Don't</strong><ul><li>Use all warm accents at equal intensity in one component.</li><li>Use Teal text directly on Navy for small copy.</li><li>Use Yellow as a primary action color.</li><li>Use White body text on light Orange/Yellow without contrast verification.</li></ul></div></div>
+  <h3 class="section-title" style="margin-top:42px">Logo system</h3>
+  <div class="logo-grid">
+    <div class="logo-card card"><div class="logo-preview"><img src="assets/logo-horizontal-navy.jpg" alt="Horizontal navy logo"></div><div class="logo-copy"><strong>Horizontal Navy</strong><span>Preferred header / light-background lockup.</span></div></div>
+    <div class="logo-card card"><div class="logo-preview dark"><img src="assets/logo-horizontal-white-transparent.png" alt="Horizontal white logo"></div><div class="logo-copy"><strong>Horizontal White</strong><span>Use on Navy, dark photography, or dark Teal.</span></div></div>
+    <div class="logo-card card"><div class="logo-preview"><img src="assets/logo-vertical-transparent.png" alt="Vertical transparent logo"></div><div class="logo-copy"><strong>Vertical Lockup</strong><span>Use where horizontal space is limited.</span></div></div>
+    <div class="logo-card card"><div class="logo-preview"><img src="assets/logo-swirl-navy.png" alt="Navy swirl mark"></div><div class="logo-copy"><strong>Swirl Mark — Navy</strong><span>Favicon, profile image, compact applications.</span></div></div>
+    <div class="logo-card card"><div class="logo-preview dark"><img src="assets/logo-swirl-transparent.png" alt="White swirl mark"></div><div class="logo-copy"><strong>Swirl Mark — White</strong><span>Compact use on dark backgrounds.</span></div></div>
+  </div>
+  <div class="motif"><div class="motif-art"><img src="assets/logo-swirl-transparent.png" alt="Decorative Full Circle swirl"></div><div><div class="section-label">Brand motif</div><h3 class="section-title" style="font-size:25px">The Full Circle ring can become a background language.</h3><p>Use the swirl/ring at approximately 3–8% visual opacity in large decorative backgrounds, section transitions, hero artwork, loading states, and social layouts. The motif reinforces continuity, movement, wholeness, and the return to patient-centered care.</p><div class="rule-grid" style="grid-template-columns:1fr"><div class="rule dont"><strong>Do not</strong><ul><li>Distort, stretch, or recolor the official logo.</li><li>Use several full-color logos as decoration.</li><li>Place the motif behind dense text at a level that harms readability.</li></ul></div></div></div></div>
+</section>
+<div class="divider"></div>
+<section class="section" id="typography">
+  <div class="section-head"><div class="section-index">03</div><div><div class="section-label">Typography</div><h2 class="section-title">Clear, calm, and <strong>easy to read.</strong></h2><p class="section-desc">Open Sans is the core digital typeface from the current manual assets. Glacial Indifference remains a display option for print and selected branded graphics.</p></div></div>
+  <div class="type-grid">
+    <div class="type-meta"><strong>H1 — Hero</strong><code>Open Sans 300 / 700<br>36–64px<br>line-height 1.05–1.15</code></div><div class="type-sample"><p class="t-h1">Stay Active.<br><strong>Stay Whole.</strong></p></div>
+    <div class="type-meta"><strong>H2 — Section</strong><code>Open Sans 600<br>24–36px<br>Navy</code></div><div class="type-sample"><p class="t-h2">Non-Surgical Treatment Options</p></div>
+    <div class="type-meta"><strong>H3 — Subsection</strong><code>Open Sans 600<br>17–20px</code></div><div class="type-sample"><p class="t-h3">Platelet-Rich Plasma (PRP)</p></div>
+    <div class="type-meta"><strong>Body</strong><code>Open Sans 400<br>15–18px<br>line-height ≥1.6</code></div><div class="type-sample"><p class="t-body">At Full Circle, you're more than just another patient — you're a person with a story, and we're here to listen. We provide care that goes beyond the presenting symptom.</p></div>
+    <div class="type-meta"><strong>Label</strong><code>Open Sans 700<br>10–12px<br>tracking .12–.14em</code></div><div class="type-sample"><span class="t-label">Regenerative Orthopedics</span></div>
+    <div class="type-meta"><strong>CTA</strong><code>Open Sans 700<br>13px</code></div><div class="type-sample"><span class="t-button">Make an Appointment</span></div>
+  </div>
+  <div class="rule-grid"><div class="rule"><strong>Secondary font roles</strong><ul><li>Glacial Indifference: print display headlines and branded graphics.</li><li>Futura: legacy/print use only when it already exists in an approved asset.</li><li>Roboto Bold: compatibility fallback; do not mix it casually with Open Sans.</li></ul></div><div class="rule dont"><strong>Avoid</strong><ul><li>More than two visible type families in one application.</li><li>Very light body text below 16px.</li><li>All-caps paragraphs.</li><li>Decorative typefaces for clinical instructions.</li></ul></div></div>
+</section>
+<div class="divider"></div>
+<section class="section" id="voice">
+  <div class="section-head"><div class="section-index">04</div><div><div class="section-label">Voice & Tone</div><h2 class="section-title">Expert without sounding <strong>cold.</strong></h2><p class="section-desc">The voice should feel human, calm, specific, and confident without hype.</p></div></div>
+  <div class="voice-grid">
+    <article class="voice card"><h3>Warm, not clinical</h3><p>Translate medical expertise into language a patient can understand.</p><div class="example bad">“The patient will undergo a minimally invasive regenerative procedure.”</div><div class="example good">“We'll explain your options and how they may help your body recover.”</div></article>
+    <article class="voice card"><h3>Confident, not arrogant</h3><p>Experience is a proof point, not a reason to make superiority claims.</p><div class="example bad">“We are the #1 orthopedic clinic in Arizona.”</div><div class="example good">“For more than 25 years, we've helped active adults navigate orthopedic injuries.”</div></article>
+    <article class="voice card"><h3>Empowering, not alarming</h3><p>Patients should leave content with clarity, not fear.</p><div class="example bad">“Act now before surgery becomes inevitable.”</div><div class="example good">“A clear evaluation can help you understand the options available to you.”</div></article>
+    <article class="voice card"><h3>Personal, not generic</h3><p>Speak directly to what people want to return to doing.</p><div class="example bad">“Patients experiencing joint pain should seek treatment.”</div><div class="example good">“If knee pain is keeping you from the activities you love, start by finding out what's causing it.”</div></article>
+  </div>
+  <div class="audience" style="margin-top:22px"><article class="card"><h3>Brand / Homepage</h3><ul class="clean-list"><li>Aspirational and patient-first</li><li>Movement and life goals before technology</li><li>Short, calm statements</li></ul></article><article class="card"><h3>Clinical / Educational</h3><ul class="clean-list"><li>Precise, cautious, evidence-aware</li><li>Explain jargon immediately</li><li>Avoid guaranteed outcomes</li></ul></article><article class="card"><h3>Aftercare / Instructions</h3><ul class="clean-list"><li>Direct and actionable</li><li>Use numbered steps and timing</li><li>Clearly state when to contact the clinic</li></ul></article></div>
+</section>
+<div class="divider"></div>
+<section class="section" id="photography">
+  <div class="section-head"><div class="section-index">05</div><div><div class="section-label">Photography</div><h2 class="section-title">Show the life patients want to <strong>get back to.</strong></h2><p class="section-desc">Active-lifestyle photography leads the brand. Human care, treatment, and technology support the story without making the experience feel sterile.</p></div></div>
+  <div class="photo-grid"><div class="photo-hero card"><img src="assets/active-life.jpg" alt="Active adult running outdoors"><div class="photo-note"><strong>Active Life — primary photography category</strong><span>Running, hiking, tennis, golf, strength, and everyday movement. Natural light and candid energy.</span></div></div><div class="photo-principles">
+    <article class="photo-principle card"><strong>01 · Active Life — ~50%</strong><p>Lead with outcomes and mobility rather than procedures.</p></article>
+    <article class="photo-principle card"><strong>02 · Human Care — ~25%</strong><p>Courtney listening, consultation, team interaction, and comfort.</p></article>
+    <article class="photo-principle card"><strong>03 · Treatment — ~15%</strong><p>Real procedures shown calmly and professionally; avoid fear-inducing closeups.</p></article>
+    <article class="photo-principle card"><strong>04 · Technology — ~10%</strong><p>Shockwave, EMTT, ultrasound, and equipment as supporting proof of capability.</p></article>
+  </div></div>
+  <div class="rule-grid"><div class="rule"><strong>Photo do's</strong><ul><li>Natural or warm controlled lighting.</li><li>Consistent background and crop system for team portraits.</li><li>Authentic active adults in realistic environments.</li><li>Full Circle-branded uniforms when staff are visible.</li></ul></div><div class="rule dont"><strong>Photo don'ts</strong><ul><li>Do not alter a real person's identity or body with generative AI.</li><li>Avoid generic stethoscope / needle stock photography.</li><li>Avoid mixed filters and wildly different color grading.</li><li>Avoid cold blue sterile imagery as the dominant visual language.</li></ul></div></div>
+</section>
+<div class="divider"></div>
+<section class="section" id="digital">
+  <div class="section-head"><div class="section-index">06</div><div><div class="section-label">Digital Experience</div><h2 class="section-title">The brand expressed as a <strong>usable interface.</strong></h2><p class="section-desc">These rules align the manual with the new website prototypes so the website does not become a separate visual system.</p></div></div>
+  <div class="digital-grid">
+    <article class="digital-card card"><h3>Action hierarchy</h3><p>Teal is the core interaction color. Orange is reserved for high-value conversion moments so “Make an Appointment” remains distinct from browsing or communication actions.</p><div class="sample-actions"><a class="btn orange" href="#">Make an Appointment</a><a class="btn teal" href="#">Chat on WhatsApp</a><a class="btn outline" href="#">Learn More</a></div></article>
+    <article class="digital-card card"><h3>Shape & spacing</h3><p>Use generous whitespace, calm section rhythm, and rounded corners in the 6–16px range. Avoid dense dashboards or visually aggressive medical UI.</p><ul class="clean-list"><li>Maximum reading width: ~72 characters</li><li>Touch targets: at least 44px</li><li>Use cards only when they improve grouping</li><li>Keep one clear primary action per section</li></ul></article>
+    <article class="digital-card card"><h3>Full Circle motif</h3><p>The swirl can appear as a low-opacity watermark, large background ring, icon container, progress/loading cue, or subtle transition element.</p><div style="height:120px;border-radius:10px;background:var(--navy);display:grid;place-items:center;margin-top:12px"><img src="assets/logo-swirl-transparent.png" alt="Swirl motif example" style="width:105px;filter:brightness(0) invert(1);opacity:.16"></div></article>
+    <article class="digital-card card"><h3>Navigation & conversion</h3><p>The preferred web structure emphasizes Conditions, Treatments, How It Works, Resources, and About. WhatsApp and Make an Appointment remain persistent patient actions.</p><ul class="clean-list"><li>No “Providers” top-level item required</li><li>Condition-first and treatment-first discovery</li><li>Mobile sticky actions are acceptable</li><li>Courtney's authority appears after patient needs are established</li></ul></article>
+  </div>
+  <h3 class="section-title" style="font-size:25px;margin-top:34px">Contrast combinations</h3>
+  <table class="contrast-table"><thead><tr><th>Foreground / Background</th><th>Use</th><th>Status</th></tr></thead><tbody><tr><td>White / Navy</td><td>Headers, footer, dark feature panels</td><td class="status-good">Preferred</td></tr><tr><td>Navy / White</td><td>Body copy, cards</td><td class="status-good">Preferred</td></tr><tr><td>White / darkened Teal</td><td>Buttons and strong UI controls</td><td class="status-good">Preferred</td></tr><tr><td>Navy / Orange</td><td>Primary conversion CTA</td><td class="status-good">Preferred</td></tr><tr><td>Teal / Navy</td><td>Small text</td><td class="status-avoid">Avoid</td></tr><tr><td>White / light Orange or Yellow</td><td>Normal-size text</td><td class="status-avoid">Avoid</td></tr></tbody></table>
+</section>
+<div class="divider"></div>
+<section class="section" id="applications">
+  <div class="section-head"><div class="section-index">07</div><div><div class="section-label">Brand Applications</div><h2 class="section-title">Use the real assets as <strong>reference points.</strong></h2><p class="section-desc">Existing print collateral and the website prototype show how the identity can scale across patient touchpoints.</p></div></div>
+  <div class="apps">
+    <article class="app card"><div class="app-preview"><img src="assets/rack-card-preview.png" alt="Rack card preview"></div><div class="app-copy"><strong>Rack Card</strong><span>Existing branded collateral. Navy structure, multi-color swirl, white content surfaces, active-lifestyle imagery.</span><a href="assets/rack-card.pdf" target="_blank">Open source PDF →</a></div></article>
+    <article class="app card"><div class="app-preview"><img src="assets/treatment-guide-preview.png" alt="Treatment guide preview"></div><div class="app-copy"><strong>Treatment Guide</strong><span>Reference for structured clinical information, restrained graphics, and print hierarchy.</span><a href="assets/treatment-guide.pdf" target="_blank">Open source PDF →</a></div></article>
+    <article class="app card"><div class="app-preview"><img src="assets/website-concept.png" alt="Website concept preview"></div><div class="app-copy"><strong>Website Concept</strong><span>Digital direction: active-life hero, clear navigation, strong condition discovery, and appointment/WhatsApp conversion paths.</span></div></article>
+    <article class="app card"><div class="app-preview" style="background:var(--navy)"><img src="assets/logo-horizontal-white-transparent.png" alt="White horizontal logo" style="max-width:330px;height:auto"></div><div class="app-copy"><strong>Dark-Surface Application</strong><span>Use white logo and high-contrast text on Navy. Teal and warm colors become controlled accents, not body-copy colors.</span></div></article>
+  </div>
+</section>
+<div class="divider"></div>
+<section class="section" id="signatures">
+  <div class="section-head"><div class="section-index">08</div><div><div class="section-label">Email Signatures</div><h2 class="section-title">Create a consistent signature and <strong>copy the HTML.</strong></h2><p class="section-desc">Fill in the fields below. The preview and HTML update automatically. The generated HTML intentionally uses simple tables and inline styles for better compatibility across email clients.</p></div></div>
+  <div class="signature-builder">
+    <div class="sig-controls card">
+      <div class="field"><label for="sig-name">Name</label><input id="sig-name" value="Courtney Kelm PA-C"></div>
+      <div class="field"><label for="sig-title">Title</label><input id="sig-title" value="Founder & Medical Director"></div>
+      <div class="field"><label for="sig-phone">Phone</label><input id="sig-phone" value="602-466-9703"></div>
+      <div class="field"><label for="sig-email">Email</label><input id="sig-email" value="info@fullcircleorthopedics.com"></div>
+      <div class="field"><label for="sig-website">Website</label><input id="sig-website" value="https://fullcircleorthopedics.com"></div>
+      <div class="field"><label for="sig-location">Location / Office</label><input id="sig-location" value="Phoenix, Arizona"></div>
+      <div class="field"><label for="sig-logo">Hosted logo URL (optional)</label><input id="sig-logo" placeholder="https://.../logo.png"></div>
+      <p class="sig-help">For the most reliable signature, host the approved horizontal logo on the company website and paste its HTTPS URL here. Local file paths and base64 images are often stripped by Gmail/Outlook.</p>
+    </div>
+    <div class="sig-output">
+      <div class="signature-preview card" id="signature-preview"></div>
+      <div class="code-wrap"><textarea id="signature-code" aria-label="Email signature HTML"></textarea><button type="button" class="copy-button" id="copy-signature">Copy HTML</button></div>
+      <p class="sig-help">How to use: copy the HTML, paste it into an HTML-capable signature editor or source field, then test it in Gmail and Outlook before deployment. If your email client only accepts rich text, copy the rendered preview instead.</p>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+<section class="section" id="governance">
+  <div class="section-head"><div class="section-index">09</div><div><div class="section-label">Governance</div><h2 class="section-title">Keep the system <strong>consistent as it grows.</strong></h2><p class="section-desc">The brand should evolve through documented decisions, not one-off exceptions.</p></div></div>
+  <div class="governance"><div class="governance-grid"><article><strong>Brand owner</strong><span>Courtney Kelm PA-C approves clinical positioning, patient promises, and major brand decisions.</span></article><article><strong>Digital & design</strong><span>Héctor Neudert maintains web implementation, digital templates, accessibility, and visual consistency.</span></article><article><strong>Review cycle</strong><span>Review the manual when a new location, major service line, or new primary channel changes how the brand is expressed.</span></article></div></div>
+</section>
+<div class="contact"><div class="contact-inner"><h2>Brand Questions?</h2><p>Use this manual as the default reference before creating new patient-facing materials.</p><div class="contacts"><div><strong>Clinical Director</strong><span>Courtney Kelm PA-C</span></div><div><strong>Digital & Brand</strong><span>Héctor Neudert</span></div><div><strong>Patient Outreach</strong><span>Becky Forbes</span></div><div><strong>Website</strong><span>fullcircleorthopedics.com</span></div></div></div></div>
+<div class="version">FCO Brand & Digital Experience Manual · Version 1.1 · September 2026 · Living document</div>
+</main>
+<script>
+(function(){
+  const ids=['name','title','phone','email','website','location','logo'];
+  const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  function cleanWebsite(v){return v.replace(/^https?:\/\//,'').replace(/\/$/,'')}
+  function build(){
+    const v={}; ids.forEach(k=>v[k]=document.getElementById('sig-'+k).value.trim());
+    const logo=v.logo?`<td style="padding:0 16px 0 0;vertical-align:top"><img src="${esc(v.logo)}" width="155" alt="Full Circle Orthopedics" style="display:block;border:0;max-width:155px;height:auto"></td>`:'';
+    const html=`<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,'Open Sans',sans-serif;color:#13243A;font-size:13px;line-height:1.45"><tr>${logo}<td style="padding:0;vertical-align:top"><div style="font-size:15px;font-weight:700;color:#13243A">${esc(v.name)}</div><div style="font-size:12px;font-weight:700;color:#007A8A;margin-top:1px">${esc(v.title)}</div><div style="width:54px;border-top:2px solid #009EB3;margin:8px 0"></div><div style="font-size:12px;color:#5D6B7C"><strong style="color:#13243A">Full Circle Orthopedics &amp; Sports Medicine</strong>${v.location?`<br>${esc(v.location)}`:''}${v.phone?`<br><a href="tel:${esc(v.phone.replace(/[^+\d]/g,''))}" style="color:#13243A;text-decoration:none">${esc(v.phone)}</a>`:''}${v.email?` &nbsp;·&nbsp; <a href="mailto:${esc(v.email)}" style="color:#007A8A;text-decoration:none">${esc(v.email)}</a>`:''}${v.website?`<br><a href="${esc(v.website)}" style="color:#007A8A;text-decoration:none">${esc(cleanWebsite(v.website))}</a>`:''}</div></td></tr></table>`;
+    document.getElementById('signature-preview').innerHTML=html;
+    document.getElementById('signature-code').value=html;
+  }
+  ids.forEach(k=>document.getElementById('sig-'+k).addEventListener('input',build));
+  document.getElementById('copy-signature').addEventListener('click',async function(){
+    const code=document.getElementById('signature-code');
+    try{await navigator.clipboard.writeText(code.value)}catch(e){code.select();document.execCommand('copy')}
+    this.textContent='Copied';this.classList.add('copied');setTimeout(()=>{this.textContent='Copy HTML';this.classList.remove('copied')},1400);
+  });
+  build();
+})();
+</script>
+</body>
+</html>
