@@ -4,7 +4,7 @@ toggle?.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expan
 
 document.querySelectorAll('[data-mega-toggle]').forEach(btn=>{
   btn.addEventListener('click',(e)=>{
-    if(window.innerWidth<=900){e.preventDefault();const item=btn.closest('.nav-item');document.querySelectorAll('.nav-item.mega-open').forEach(i=>{if(i!==item)i.classList.remove('mega-open')});item?.classList.toggle('mega-open')}
+    if(window.matchMedia('(max-width:1120px)').matches){e.preventDefault();const item=btn.closest('.nav-item');document.querySelectorAll('.nav-item.mega-open').forEach(i=>{if(i!==item)i.classList.remove('mega-open')});item?.classList.toggle('mega-open')}
   });
 });
 
