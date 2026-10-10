@@ -64,3 +64,10 @@ dialog{border:0;padding:0;border-radius:18px;max-width:min(760px,92vw);width:100
 html{scroll-padding-top:100px}
 @media(max-width:900px){html{scroll-padding-top:90px}.primary-nav.open{max-height:calc(100vh - 82px);max-height:calc(100dvh - 82px);overflow-y:auto}}
 @media(max-width:640px){html{scroll-padding-top:82px}.primary-nav.open{max-height:calc(100vh - 74px);max-height:calc(100dvh - 74px)}}
+
+/* Footer contact link colors */
+.footer-tel{color:#fff!important;text-decoration:underline;text-underline-offset:3px}
+.footer-wa{color:#6ddc8a!important;text-decoration:underline;text-underline-offset:3px}
+.footer-address{color:#c5d8d6;font-size:13px}
+/* Resources mini dropdown */
+.mega-menu-sm{width:240px;grid-template-columns:1fr}
